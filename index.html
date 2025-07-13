@@ -1,0 +1,1269 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumFlix - Ultimate Entertainment Hub</title>
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            
+            <div class="logo"><img src="Asset/sl.png" height="40px" width="45px">SumFlix</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Trailers</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+            <div class="nav-extra">
+                <form class="search-bar" onsubmit="return false;">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button title="search"><i class="fas fa-search"></i></button>
+                </form>
+                <select class="lang-select" title="Language">
+                    <option selected>English</option>
+                    <option>Bengali</option>
+                    <option>Hindi</option>
+                    <option>Tamil</option>
+                    <option>Telegu</option>
+                    <option>Kannada</option>
+                    <option>Marathi</option>
+                    <option>Punjabi</option>
+                    <option>Malayalam</option>
+                    <option>Bhojpuri</option>
+                    <option>Gujarati</option>
+                </select>
+                <button class="upgrade-btn">Upgrade</button>
+                <!-- <button class="use-app-btn">Use App</button> -->
+                <div class="account-menu">
+                    <button class="account-btn" onclick="toggleDropdown()">Account</button>
+                    <div class="dropdown" id="dropdownMenu">
+                        <a href="#">Login</a>
+                        <a href="#">Sign Up</a>
+                        <a href="#">Profile</a>
+                        <a href="#">Watchlist</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+
+                                <div class="trendify-sub">✨ The Ultimate Entertainment Universe ✨</div>
+                                <h1>Welcome to <span style="background:linear-gradient(90deg,var(--neon-yellow),var(--neon-pink));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-fill-color:transparent;font-weight:900;">SumFlix!</span></h1>
+
+                <!-- <h1><span class="glow">Welcome to Trendify</span></h1> -->
+                <p>Your daily dose of trending movies, series, sports & music. Discover what's hot right now!</p>
+                <a href="#" class="cta-btn">Explore Now</a>
+            </div>
+            <img src="https://i.ytimg.com/vi/EAknoivrxgk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAyAFrxkRrnqzonj8_2kq1fuVWZDA" alt="Entertainment" class="hero-img">
+        </div>
+        <div class="ticker">
+            <div class="ticker-wrap">
+                <span> 🔥 Now Streaming: New Blockbusters | Daily Trailers | Bollywood & South Hits | Hollywood in HD | Horror Nights | Kids Shows & Cartoons | Trending Anime | Live IPL & Olympics | Cricket Fever | SumFlix Originals – Watch Anytime, Anywhere! 🔥
+</span>
+            </div>
+        </div>
+    </header>
+    <main>
+
+         <section class="cards-section">
+            <h2 class="section-title">🔥Currently Trending🔥</h2>
+            <div class="cards-container">
+                <div class="card" style="--accent:#24b7f1;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC5Ugu7rR7DObKujaK39Q34CSo5HjxQwTIZA&s" alt="Deadpool & Wolverine">
+                    <h3>WAR 2</h3>
+                    <p>Marvel's most awaited crossover full of wit, action, and chaos.</p>
+                    <a href="#">See Full Movie</a>
+                </div>
+                <div class="card" style="--accent:#0bee9bc5;">
+                    <img src="https://occ-0-4995-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVHJWqwTYXGmOHqSd1zqalE9IuNqDg-A8Hcis2jvsWHfxUHWYq7gH5YUM3LErWN6OBYQzEUcKMkZadaRVn-lf7sK2uXApNEjdKs2g17WDNPFoyYq8fJsK5IoYmSTU26aO_qYYKFTHeDcHJxJ3zvQomqhSPTfnHsRFMn0O4CEz1azwt2oMTi3u60IJZXt1LWRX93BXCODeDgWNkOIs3X8SdxDD83_fuQfQr-J5dA.jpg?r=f75" alt="Taylor Swift">
+                    <h3>RAID 2</h3>
+                    <p>The global phenomenon continues to break records and hearts.</p>
+                    <a href="#">See Full Movie</a>
+                </div>
+                <div class="card" style="--accent:#e61e9d;">
+                    <img src="https://i.ytimg.com/vi/jI9nidYVhlk/maxresdefault.jpg">
+                    <h3>KANTARA</h3>
+                    <p>Return to Hawkins for the most thrilling season yet.</p>
+                    <a href="#">See Full Movie</a>
+                </div>
+                <div class="card" style="--accent:#FFB86C;">
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00363347-batehehrkp-landscape.jpg"   alt="Billie Eilish">
+                    <h3>HOUSEFULL 5</h3>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">See Full Movie</a>
+                </div>
+                
+            </div>
+        </section>
+
+         <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="category-card"><i class="fas fa-film"></i><span>Movies</span></div>
+            <div class="category-card"><i class="fas fa-tv"></i><span>Series</span></div>
+            <div class="category-card"><i class="fas fa-futbol"></i><span>Sports</span></div>
+            <div class="category-card"><i class="fas fa-child"></i><span>Kids</span></div>
+            <div class="category-card"><i class="fas fa-broadcast-tower"></i><span>Live</span></div>
+            <div class="category-card"><i class="fas fa-music"></i><span>Music</span></div>
+            <div class="category-card"><i class="fas fa-video"></i><span>Trailers</span></div>
+            <div class="category-card"><i class="fas fa-language"></i><span>Languages</span></div>
+        </section>
+        <!-- Main Cards Section -->
+       
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <div class="carousel-title">Trailers</div>
+            <div class="carousel-container" id="carousel">
+                <div class="carousel-item" style="--accent:#db18b4;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/cc81843dcd2cc8eea02d14d8188a25b9/en/16x9/320x180/test_pic1733491241335.webp" alt="Deadpool & Wolverine">
+                    <h4>MOHREY</h4>
+                    <p>Marvel's most awaited crossover full of wit, action, and chaos.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#1191e1;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/3d69bff964bf3e33a98d95715e531208/en/16x9/320x180/test_pic1738335412351.webp" alt="Taylor Swift">
+                    <h4>HALF CA 
+                      SEASON 2</h4>
+                    <p>The global phenomenon continues to break records and hearts.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#1ad07b;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/ff5dcad9750ba338a5172633fdb85839/en/16x9/320x180/test_pic1738335692916.webp">
+                    <h4>A TITAN STORY</h4>
+                    <p>Return to Hawkins for the most thrilling season yet.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#FFB86C;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/79eaa7aa0a15c17762711ca841c71dd9/en/16x9/320x180/test_pic1738230770596.webp" alt="Billie Eilish">
+                    <h4>FIRST COPY</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#0fb4c6;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/4d55553833c1ada184069446d6e32fd7/en/16x9/320x180/test_pic1738335364241.webp" alt="Billie Eilish">
+                    <h4>SIXER</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#c46cff;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/88a12280611b788eada926f997fb421e/en/16x9/320x180/test_pic1749444460803.webp" alt="Billie Eilish">
+                    <h4>GAMER LOG</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#c4ff6c;">
+                    <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2192/1745348822192-h" alt="Billie Eilish">
+                    <h4>EMPURAAN</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#ff6c9b;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/af6619a0491e73364a652b062052063f/en/16x9/320x180/test_pic1750945514474.webp" alt="Billie Eilish">
+                    <h4>THE LEGEND OF HEROES</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#FFB86C;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/f86fd974765e8fbc180532e237aeb4f8/en/16x9/320x180/test_pic1738335443092.webp" alt="Billie Eilish">
+                    <h4>HUNTER 2</h4>
+                    <p>Billie's unique voice and style redefine the pop landscape.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#18F9A6;">
+                    <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/731/1725465020731-h" alt="Kids">
+                    <h4>KILL</h4>
+                    <p>Kids' favorite show – fun, laughter, and learning!</p>
+                    <a href="#">Watch Now</a>
+                </div>
+                <div class="carousel-item" style="--accent:#e6611e;">
+                    <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6810/1746187886810-h" alt="Live Music">
+                    <h4>MAAYON</h4>
+                    <p>Experience the thrill of global artists performing live.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+                <div class="carousel-item" style="--accent:#735dc4;">
+                    <img src="https://qqcdnpictest.mxplay.com/pic/8fc71ce2f84d62d1d8df7cc20a7f448e/en/16x9/320x180/test_pic1749729165955.webp" alt="Live Music">
+                    <h4>PS-2</h4>
+                    <p>Experience the thrill of global artists performing live.</p>
+                    <a href="#">Watch Trailer</a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+
+         
+
+        <!-- EXAMPLE: Trending Now -->
+<div class="mx-section">
+  <div class="mx-section-title">
+    <i class="fas fa-fire" style="color:#f84aad;"></i> Bollywood Top Hits
+  </div>
+  <div class="mx-scroll">
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://occ-0-4995-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTx7VTJlCzS0jw8GTnaZgIs4WDuqS2-bEkgFZ1x4phEEyrGMSRrLqfsJarQjxwCB3yFyzv1HTbXb1RWWqk7VaeF_nR_m0-XAI5M.jpg?r=804" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">FIGHTER</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8745/1711391708745-v" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">IB71</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/816e06add5f7ae65d996d3ec15cebe0c/en/2x3/320x480/test_pic1740042021191.webp" alt="The Batman">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">MAR JAAVAAN</div>
+      <div class="mx-card-genre">Crime • Thriller</div>
+    </div>
+
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/75/Chhaava_film_poster.jpg" alt="Doctor Strange 2">
+        <span class="mx-card-badge">Action </span>
+      </div>
+      <div class="mx-card-title">CHHAAVA</div>
+      <div class="mx-card-genre">Fantasy • Action</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/4bdad1958824d1d6c174eccb9a091179/en/2x3/320x480/test_pic1733481823321.webp" alt="Top Gun: Maverick">
+        <span class="mx-card-badge"> HOT</span>
+      </div>
+      <div class="mx-card-title">CHHALAANG</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqqbdmhu4e3bVUst-7DTlUA7wSrEeqxNSjKjWc1C8uXHYSMpM7W4N38vMzdE2JzNp6297L" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">SIKANDAR</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <!-- Add more cards as needed -->
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/1a4e41018417e4eeb8d3bab03d986d43/en/2x3/320x480/test_pic1738930438472_badged_1750568412697.webp" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Sci-Fi</span>
+      </div>
+      <div class="mx-card-title">RUNWAY 34</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/217/1640217-v-99dd2cb43cd4" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">12TH FAIL</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4539/1749797114539-v" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">KESARI CHAPTER 2</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Sky_Force_poster.jpg/250px-Sky_Force_poster.jpg" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">SKY FORCE</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://www.vajra.world/movie-image/jawan-1693838039.jpeg" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">JAWAN</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="mx-section">
+  <div class="mx-section-title">
+    <i class="fas fa-fire" style="color:#f84aad;"></i> South Indian Cinema
+  </div>
+  <div class="mx-scroll">
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjcOGT_ouUfSrqAhnCUb9PiYkmRNYVUJZgTRO-Y1ci2gglsWFg-trAwFU2MC7IwWOHfs8F" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">ANWESHIPPIN KANDETHUM</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGVhMjFmMmQtMDE5Zi00NDdjLTgxMzktOWIxZTBlNmViNDMzXkEyXkFqcGc@._V1_.jpg" alt="The Batman">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">DRAGON</div>
+      <div class="mx-card-genre">Crime • Thriller</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://bollyspice.com/wp-content/uploads/2022/08/48AED85D-15A7-4604-B854-81FD54DBDA18.jpeg" alt="Doctor Strange 2">
+        <span class="mx-card-badge">Action </span>
+      </div>
+      <div class="mx-card-title">SITA RAMAN</div>
+      <div class="mx-card-genre">Fantasy • Action</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://hindi.filmyfocus.com/wp-content/uploads/2023/09/Skanda-2.jpg" alt="Top Gun: Maverick">
+        <span class="mx-card-badge"> HOT</span>
+      </div>
+      <div class="mx-card-title">SKANDA</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Ns2XKOIozX6_hLVjP8H5kTwkQt72lonnffD6sq3kFop-bvL4PkNyOLnqEEMkoAZgvUo&usqp=CAU" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">A..Aa</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <!-- Add more cards as needed -->
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/10d72055d326a6a75026049142f791dc/en/2x3/320x480/test_pic1727366166457.webp" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Sci-Fi</span>
+      </div>
+      <div class="mx-card-title">MR. MAJNU</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/f73b92752c25f26830f5ced3fc9aabb0/en/2x3/320x480/test_pic1582540129822.webp" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">YEVADU</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/044f9473cdc249647b0ac9ee301b7a39/en/2x3/320x480/f2cf317d27441c431a456b707fcb6b8c_1280x1920.webp" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">MCA</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BOGQ3MzA3ODItYjMyNy00YTMyLWI2OGYtMjE2M2JlNTdhOTEzXkEyXkFqcGc@._V1_.jpg" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">DEAR COMRADE</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">LUCKY BASKHAR</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2019/03/RRR-2022.jpeg" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">RRR</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+  </div>
+</div>
+
+<div class="mx-section">
+  <div class="mx-section-title">
+    <i class="fas fa-fire" style="color:#f84aad;"></i> Hollywood Movies
+  </div>
+  <div class="mx-scroll">
+       <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMD-En_5i2eMnPj2MCzqCdXNxfT1tYqcJ2_5aMDfVyq76b-oP6NMzKIV_0WZXfR9oYp9udRA" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">JURASSIC WORLD</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+       <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/0*4PnAjiB7dfuztlcd" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">CAPTAIN AMERIKA</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/bc85356f6c1eecd3673d1d58d592c819/en/2x3/320x480/test_pic1737362341944.webp" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">SPIDER MAN-2</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/5fac1cba6cb2cbe60da66436156ab0ac/en/2x3/320x480/test_pic1737361716276.webp" alt="The Batman">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">A.X.L</div>
+      <div class="mx-card-genre">Crime • Thriller</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcJhb9KuMdOawtpVnDPSGO0qvH38XIrjjfe-mQRHaYZ67PmKaEmapaE4I8S9SPszr8waGDE-H4A_m1eqQrRYZMgZOsCtacbw08kTMhpg" alt="Doctor Strange 2">
+        <span class="mx-card-badge">Action </span>
+      </div>
+      <div class="mx-card-title">TITANIC</div>
+      <div class="mx-card-genre">Fantasy • Action</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/320x480/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp" alt="Top Gun: Maverick">
+        <span class="mx-card-badge"> HOT</span>
+      </div>
+      <div class="mx-card-title">JUMANJI</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/aed4bfc8810f6ea62010813a83d104cf/en/16x9/320x180/78fd4e6a89186007fc24672cbf1265b6_1920x1080.webp" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">FRIEND REQUEST</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <!-- Add more cards as needed -->
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQF0TjmtfnNHBJ_S2JMzOhF45NgJAjRKpRZipRZex1tw-KLZQ8R9aIp_TGGDNWBx4iSy3a" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Sci-Fi</span>
+      </div>
+      <div class="mx-card-title">Avengers: Endgame</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEWEKrGjS-mQ_YGDUvlPjZQoLhZ084Cf-o2nBU7BkvZVUjJf8poO5BL0510QhJhhUxF9qK" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">Top Gun: Maverick</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://occ-0-4995-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbq70GRp1u8wCyWfNH09JaJubdDn5WCqDfb5mCQZsx4nIwPk4iJn-qqbLgo123UmbB_qYo7x8Xb36jPRTQuiGb04baiTNqUo_xI.jpg?r=e3e" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">THE GREAT WALL</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/b75551f64ef421b0f00181b1094c412e/en/2x3/320x480/test_pic1727977915454.webp" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">THE SONG OF ASSAASINS</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_.jpg" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">AVATAR</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKAPIdOnlEUZQX16osGpri4OmrP_BS93Ou5U55Xa_8iqKwmhDwOlf8vTdHas_zz21SRcajbA" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">HEADS OF STATE</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mx-section">
+  <div class="mx-section-title">
+    <i class="fas fa-fire" style="color:#f84aad;"></i> Horror Movies
+  </div>
+  <div class="mx-scroll">
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDc4Mjk2MjA0NF5BMl5BanBnXkFtZTcwMzMyNjQ3Mw@@._V1_.jpg" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">THE LAST EXORCISM</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://qqcdnpictest.mxplay.com/pic/cf4148eed2c0bbdde82aa8e3164f91c6/en/2x3/312x468/test_pic1648186044448.webp" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">A NUN'S CURSE</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeqClg9WkzGhd4gNWXa-gJGeZS_2HkNNclIzPhy66CKBnamMAY0TcbQZmWTuD4otPUjmtlFA" alt="Spider-Man: No Way Home">
+        <!-- <span class="mx-card-badge">Pro</span> -->
+      </div>
+      <div class="mx-card-title">THE CONSURING</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+      
+       <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2983/1734081652983-v" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">THE EXORCISM OF GOD</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://image.tmdb.org/t/p/w500/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg" alt="Spider-Man: No Way Home">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">QUIET PLACE</div>
+      <div class="mx-card-genre">Adventure • Marvel</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7687/1739443677687-v" alt="The Batman">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">TRAIN TO BUSAN</div>
+      <div class="mx-card-genre">Crime • Thriller</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9074/1750075659074-v" alt="Doctor Strange 2">
+        <span class="mx-card-badge">Action </span>
+      </div>
+      <div class="mx-card-title">TERRIFIER 2</div>
+      <div class="mx-card-genre">Fantasy • Action</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2259/1734090852259-v" alt="Top Gun: Maverick">
+        <span class="mx-card-badge"> HOT</span>
+      </div>
+      <div class="mx-card-title">ANNABELLE COME HOME</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2139/1572139-v-906f6abcacd1" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Pro</span>
+      </div>
+      <div class="mx-card-title">1920</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <!-- Add more cards as needed -->
+     <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7405/1750077577405-i" alt="Avengers: Endgame">
+        <span class="mx-card-badge">Sci-Fi</span>
+      </div>
+      <div class="mx-card-title">ENSURE: Endgame</div>
+      <div class="mx-card-genre">Action • Sci-Fi</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2430/1749754002430-h" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">SUBHAM</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoOBxXVt2tC8cnXs3MPHt3vGxZusu2PLohtLbEPHAYkscE2SYx-trDPxI97PxIWO-x3apx" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">GUARDIAN</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://m.media-amazon.com/images/M/MV5BZGZmOTZjNzUtOTE4OS00OGM3LWJiNGEtZjk4Yzg2M2Q1YzYxXkEyXkFqcGc@._V1_.jpg" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">IT</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTglLjw_HvN35hc8O7ULptsVL9yopcUDujWlA&s" alt="Top Gun: Maverick">
+        <!-- <span class="mx-card-badge">Action</span> -->
+      </div>
+      <div class="mx-card-title">HEREDITARY</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+    <div class="mx-card" tabindex="0">
+      <div class="mx-card-img-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6esU-YBIOuno_ZKDf6I0e4REnSUNdHKIzwh4SBCj19NdxvMTioXCJ7Gi0wHrZPcmeoCAnzw" alt="Top Gun: Maverick">
+        <span class="mx-card-badge">Action</span>
+      </div>
+      <div class="mx-card-title">THE MONKEY NEON</div>
+      <div class="mx-card-genre">Action • Drama</div>
+    </div>
+  </div>
+</div>
+ 
+
+<h6>🎬 Kids & Animes</h6>
+  <div class="kids-section">
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8783/1735360948783-h" alt="Movie 1" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">RUDRA</div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/9157/1734245859157-h" alt="Movie 2" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">POKEMON</div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1481/681481-h" alt="Movie 3" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">DORAEMON</div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4193/1738821274193-h" alt="Movie 4" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">KEMONO JIHEN</div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/8006/1738821178006-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">DUTBURST DREAMER BOYS</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3166/1734418663166-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">MR BEAN</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7592/1719144517592-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">KRISHNA</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/93/1736867300093-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">MOTU PATLU</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7737/1715415147737-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">SHINCHAN</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*rvic3fIB9oPry79fhjMuHw.gif" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">SOLO LEVELING</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3912/673912-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">SOFIA THE FIRST</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/767/1734428670767-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">MORIARTY THE PATRIOT</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7549/1735360387549-h" alt="Movie 5" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">SHIVA</div>
+    </div>
+
+    <div class="card-wrapper">
+      <div class="card2">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4539/674539-h" alt="Movie 6" />
+        <button class="play-button">▶ Play</button>
+      </div>
+      <div class="title">THE JUNGLE BOOK</div>
+    </div>
+  </div>
+
+<section class="liveNow">
+  <h2>LIVE Now</h2>
+
+  <div class="scrollRow">
+    <!-- Card 1 -->
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4792/1739722774792-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">48 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">
+        Sonay Kartal vs Anastasia Pavlyuchenkova – Rd 4, men’s Singles
+      </h3>
+    </article>
+<article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7506/1751736977506-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">48 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">
+        Sonay Kartal vs Anastasia Pavlyuchenkova – Rd 4, 
+      </h3>
+    </article>
+    <!-- Card 2 -->
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/7011/1744049017011-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">55 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">
+        Nicolas Jarry vs Cameron Norrie – Rd 4, Men’s Singles
+      </h3>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5832/1748974755832-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">42 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">
+        Solana Sierra vs Laura Siegemund – Rd 4, men’s Singles
+      </h3>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5745/1750779565745-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">67 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">
+        England vs India – 2nd Test, Day 5
+      </h3>
+    </article>
+
+    <!-- Extra cards -->
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1790/1751777721790-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    
+    
+<article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4212/1746872694212-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/1301/1744550261301-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/2143/1728923712143-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4607/1719251904607-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/3732/1741104423732-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/6666/1751751416666-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/4928/1751636064928-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/233/1751738320233-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">32 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #1</h3>
+    </article>
+    <article class="videoCell">
+      <div class="liveCard">
+        <img src="https://img.hotstar.com/image/upload/f_auto,q_90,w_384/sources/r1/cms/prod/5227/1751814985227-h" alt="">
+        <span class="badgeLive">LIVE</span>
+        <div class="metaBar">
+          <span class="metaPlay"></span>
+          <span class="metaDuration">38 min</span>
+        </div>
+      </div>
+      <h3 class="matchTitle">Bonus Match #2</h3>
+    </article>
+  </div>
+</section>
+   
+
+<!-- More sections can be added following the same pattern -->
+       
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <h2>🚀 Share Your Thoughts with Sumflix!</h2>
+            <p>Your feedback powers our next update. Drop your ideas, wishes, or bugs below!</p>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Tell us what you loved, or what we can improve..."  >
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+
+        <footer>
+         <!-- <section class="follow-section">
+            <h3>Follow us for Updates</h3>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon" href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section> -->
+    
+
+         <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand-section">
+                    <a href="#" class="brand-logo">
+                        <!-- <div class="play-icon"></div> -->
+                        <div class="logo"><img src="Asset/sl.png" height="40px" width="45px">SumFlix</div>
+                    </a>
+                    <p class="brand-description">
+                        Your ultimate streaming destination for the latest movies, trailers,trending web shows, live TV, sports and newly released content. Experience entertainment like never before.
+                    </p>
+                    <div class="social-links">
+                        <section class="follow-section">
+            <h3>Follow us for Updates</h3>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-icon" href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon" href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">News</a>
+                        <a href="#" class="footer-link">Investor Relations</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Contact Us</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Account</a>
+                        <a href="#" class="footer-link">Accessibility</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Legal</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Cookie Policy</a>
+                        <a href="#" class="footer-link">DMCA</a>
+                        <a href="#" class="footer-link">Compliance</a>
+                    </div>
+                </div>
+
+                <div class="footer-section app-download">
+                    <h3 class="footer-title">Get Our App</h3>
+                    <p style="color: #b0b0b0; font-size: 0.9rem;">Click a button  below to download our mobile app</p>
+                    <!-- <div class="qr-code">
+                        <div class="play-icon-small"></div>
+                    </div> -->
+                    <div class="app-stores">
+                        <a href="#" class="app-store">📱 App Store</a>
+                        <a href="#" class="app-store">🤖 Google Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 SumFlix. All rights reserved.</p>
+                <p>Made with ❤️ for entertainment lovers. | <a href="#">Cookie Settings</a></p>
+            </div>
+        </div>
+    <!-- </footer>
+    
+        <p>&copy; 2025 SumFlix. Crafted with <span>❤</span> for entertainment lovers.</p>
+    </footer> -->
+    </main>
+    <script>
+    function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('open');
+    }
+    function toggleDropdown() {
+        document.getElementById('dropdownMenu').classList.toggle('open');
+    }
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.account-menu')) {
+            document.getElementById('dropdownMenu').classList.remove('open');
+        }
+    });
+    </script>
+
+<!-- Mobile Bottom Nav (Only for Mobile) -->
+<nav class="mobile-bottom-nav">
+  <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+<a href="#" onclick="toggleMobileMovies(event)">
+  <i class="fas fa-film"></i><span>Movies</span>
+</a>
+  <a href="#" onclick="toggleMobileLanguage(event)">
+    <i class="fas fa-globe"></i><span>Language</span>
+  </a>
+  <a href="#" onclick="toggleMobileSearch(); return false;">
+  <i class="fas fa-search"></i><span>Search</span>
+</a>
+
+<a href="#" onclick="toggleMobileAccount(event)">
+  <i class="fas fa-user"></i><span>Account</span>
+</a></nav>
+
+<!-- ✅ Mobile Account Dropdown -->      
+<div class="mobile-account-dropdown" id="mobileAccountMenu">
+  <div class="dropdown-inner">
+    <a href="#">👤 Login</a>
+    <a href="#">📝 Sign Up</a>
+    <a href="#">📂 Profile</a>
+    <a href="#">🎞 Watchlist</a>
+    <a href="#">⚙ Settings</a>
+    <a href="#">🚪 Logout</a>
+  </div>
+</div>
+<div class="mobile-lang-dropdown" id="mobileLangDropdown">
+  <div class="lang-inner">
+    <a href="#">English</a>
+    <a href="#">বাংলা</a>
+    <a href="#">हिंदी</a>
+    <a href="#">தமிழ்</a>
+    <a href="#">తెలుగు</a>
+    <a href="#">മലയാളം</a>
+    <a href="#">ಕನ್ನಡ</a>
+    <a href="#">ગુજરાતી</a>
+  </div>
+</div>
+
+<!-- ✅ Mobile Movies Dropdown -->
+<div class="mobile-movies-dropdown" id="mobileMoviesDropdown">
+  <div class="movies-inner">
+    <!-- <a href="#"></a> -->
+    <a href="#">Bollywood</a>
+    <a href="#">South indian</a>
+    <a href="#">Hollywood</a>
+    <a href="#">Horror </a>
+    <a href="#">Romantic  </a>
+    <a href="#">Comedy </a>
+    <a href="#">Action</a>
+    <a href="#">Adventure</a>
+    <a href="#">Mystery</a>
+    <a href="#">Thriller</a>
+        <a href="#">Fantacy</a>
+
+  </div>
+</div>
+
+<script>
+  function toggleMobileAccount(e) {
+    e.preventDefault();
+    const menu = document.getElementById("mobileAccountMenu");
+    menu.classList.toggle("show");
+  }
+
+  // Optional: Click outside to close
+  document.addEventListener("click", function (e) {
+    const menu = document.getElementById("mobileAccountMenu");
+    const clickedInside = e.target.closest('.mobile-account-dropdown') || e.target.closest('.mobile-bottom-nav a');
+    if (!clickedInside) {
+      menu?.classList.remove("show");
+    }
+  });
+</script>
+      <script>
+  function toggleMobileSearch() {
+    const dropdown = document.getElementById("mobileSearchDropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    } else {
+      dropdown.style.display = "block";
+      document.getElementById("mobileSearchInput").focus();
+    }
+  }
+
+  function performMobileDropdownSearch() {
+    const query = document.getElementById("mobileSearchInput").value.trim();
+    if (query) {
+      alert("Searching for: " + query);
+    } else {
+      alert("Please enter something to search.");
+    }
+  }
+
+  // Optional: Hide if clicking outside
+  document.addEventListener("click", function (e) {
+    const dropdown = document.getElementById("mobileSearchDropdown");
+    const inside = e.target.closest(".mobile-search-dropdown") || e.target.closest(".mobile-bottom-nav a");
+    if (!inside) {
+      dropdown.style.display = "none";
+    }
+  });
+</script>
+
+ <script>
+  function toggleMobileLanguage(e) {
+    e.preventDefault();
+    const lang = document.getElementById("mobileLangDropdown");
+    lang.classList.toggle("show");
+  }
+
+  function toggleMobileAccount(e) {
+    e.preventDefault();
+    const menu = document.getElementById("mobileAccountMenu");
+    menu.classList.toggle("show");
+  }
+
+  // ✅ Optional: Hide on outside click
+  document.addEventListener("click", function (e) {
+    const langDropdown = document.getElementById("mobileLangDropdown");
+    const accDropdown = document.getElementById("mobileAccountMenu");
+
+    const clickedInside =
+      e.target.closest(".mobile-bottom-nav a") ||
+      e.target.closest(".mobile-lang-dropdown") ||
+      e.target.closest(".mobile-account-dropdown");
+
+    if (!clickedInside) {
+      langDropdown?.classList.remove("show");
+      accDropdown?.classList.remove("show");
+    }
+  });
+</script>
+
+<script>
+  function toggleMobileLanguage(e) {
+    e.preventDefault();
+    document.getElementById("mobileLangDropdown").classList.toggle("show");
+    document.getElementById("mobileMoviesDropdown")?.classList.remove("show");
+  }
+
+  function toggleMobileAccount(e) {
+    e.preventDefault();
+    document.getElementById("mobileAccountMenu").classList.toggle("show");
+    document.getElementById("mobileMoviesDropdown")?.classList.remove("show");
+  }
+
+  function toggleMobileMovies(e) {
+    e.preventDefault();
+    document.getElementById("mobileMoviesDropdown").classList.toggle("show");
+    document.getElementById("mobileLangDropdown")?.classList.remove("show");
+    document.getElementById("mobileAccountMenu")?.classList.remove("show");
+  }
+
+  document.addEventListener("click", function (e) {
+    const langDropdown = document.getElementById("mobileLangDropdown");
+    const accDropdown = document.getElementById("mobileAccountMenu");
+    const movieDropdown = document.getElementById("mobileMoviesDropdown");
+
+    const clickedInside =
+      e.target.closest(".mobile-bottom-nav a") ||
+      e.target.closest(".mobile-lang-dropdown") ||
+      e.target.closest(".mobile-account-dropdown") ||
+      e.target.closest(".mobile-movies-dropdown");
+
+    if (!clickedInside) {
+      langDropdown?.classList.remove("show");
+      accDropdown?.classList.remove("show");
+      movieDropdown?.classList.remove("show");
+    }
+  });
+</script>
+
+
+<!-- ✅ Mobile Search Dropdown (top, hidden by default) -->
+<div class="mobile-search-dropdown" id="mobileSearchDropdown">
+  <div class="search-inner">
+    <input type="text" id="mobileSearchInput" placeholder="Search SumFlix...">
+    <button onclick="performMobileDropdownSearch()">
+      <i class="fas fa-search"></i>
+    </button>
+    <span class="close-search" onclick="toggleMobileSearch()">&times;</span>
+  </div>
+</div>
+
+</body>
+</html>
