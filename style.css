@@ -673,7 +673,12 @@
     }
     @media (max-width: 600px) {
         .carousel-section, .categories-section, .cards-section, .newsletter-section { padding: 5px 1vw; margin: 5px 1vw;}
-        .hero-img { width: 98vw;}
+        .hero-img { 
+          width: 96vw;
+        }
+        .img-s{
+          height: 95%;
+        }
         .carousel-item { min-width: 95vw; max-width: 98vw;}
         .carousel-section { margin: 5px 1vw 0 1vw;}
         .categories-section { grid-template-columns: 1fr 1fr; gap: 7px;}
